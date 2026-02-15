@@ -1,0 +1,27 @@
+# Odin build outputs
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+
+# Odin cache/directories
+.odin/
+
+# Debug/core dumps
+*.core
+core
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# others
+*.json

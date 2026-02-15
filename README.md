@@ -1,0 +1,3 @@
+Taskwarrior Clone written in Odin.
+
+For educational purposes...

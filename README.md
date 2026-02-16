@@ -1,11 +1,14 @@
-Taskwarrior Clone written in Odin.
+# Taskwarrior Clone written in Odin.
 
-For educational purposes...
-
+This is a learning project.
 Mostly boilerplate.
 
-You can add a (one) task with some tags.
-The task is saved in a json file.
-
-Thats it.
-For now.
+## Todos:
+- [ ] add tasks to json
+    - [x] create json file if not present
+    - [x] add one or multiple tags to a task
+    - [ ] ...
+- [ ] read tasks from json
+- [ ] marks tasks as done
+- [ ] delete unwanted tasks
+- [ ] modify existing tasks

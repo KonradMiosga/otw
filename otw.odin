@@ -1,13 +1,14 @@
 package main
 
 import "core:encoding/json"
+import "core:encoding/uuid"
 import "core:fmt"
 import "core:os"
 import "core:strings"
 import "core:time"
 
 Task :: struct {
-	uuid:        int,
+	uuid:        string,
 	description: string,
 	status:      Status,
 	priority:    Priority,
@@ -64,8 +65,8 @@ task_save :: proc(path: string, t: Task) -> bool {
 	return true
 }
 
-new_uuid :: proc() -> int {
-	return int(time.time_to_unix_nano(time.now()))
+new_uuid :: proc() -> string {
+	return uuid.to_string(uuid.generate_v7_basic(time.now()))
 }
 
 args_parse :: proc(args: []string) -> Task {

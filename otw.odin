@@ -94,6 +94,8 @@ main :: proc() {
 		if os.args[1] == "add" {
 			t := args_parse(os.args[2:])
 			task_save("task.json", t)
+		} else {
+			fmt.println("unknown command:", os.args[1])
 		}
 	}
 }
